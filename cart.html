@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../asm/css/cart.css">
+    </body>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header_caiLoNuong">
+            <div class="logo">
+                <a href="#"><img src="https://cailonuong.com/wp-content/uploads/2024/04/logo.png#30392" alt="Logo"></a>
+            </div>
+            <div>
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">TRANG CHỦ</a> | </li>
+                    <li class="dropdown">MENU BÁNH |
+                        <ul class="dropdown-content">
+                            <li><a href="#">Sweet Box</a></li>
+                            <li><a href="#">Bánh Mousse</a></li>
+                            <li><a href="#">Bánh Entremet</a></li>
+                            <li><a href="#">Bánh Kem Bắp</a></li>
+                            <li><a href="#">Bánh Flan Gato</a></li>
+                            <li><a href="#">Combo Bánh Nướng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shipped.html">GIAO HÀNG</a> | </li>
+                    <li><a href="contact.html">LIÊN HỆ</a> | </li>
+                    <li><a href="#" onclick="showLogin()">ĐĂNG NHẬP</a> | </li>
+                    <li><a href="#" onclick="showRegister()">ĐĂNG KÝ</a> | </li>
+                    <li><a href="cart.html">GIỎ HÀNG</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="center-banner">
+
+            <a href="#"><img src="../asm/images/background.png" style="max-width: 1857px;" alt="Banner"></a>
+        </div>
+
+        <div class="center_caiLoNuong">
+            <h2>Giỏ Hàng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bánh Mousse</td>
+                        <td>2</td>
+                        <td>100,000 VND</td>
+                        <td>200,000 VND</td>
+                    </tr>
+                    <tr>
+                        <td>Bánh Kem Bắp</td>
+                        <td>1</td>
+                        <td>150,000 VND</td>
+                        <td>150,000 VND</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Box</td>
+                        <td>3</td>
+                        <td>80,000 VND</td>
+                        <td>240,000 VND</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: right;">Tổng cộng:</td>
+                        <td>590,000 VND</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="cart-actions">
+                <button type="button" onclick="checkout()">Thanh toán</button>
+                <button type="button" onclick="continueShopping()">Tiếp tục mua sắm</button>
+            </div>
+        </div>
+
+        <div class="footer_caiLoNuong">
+            <div class="footer-top">
+                <p><em>Công ty TNHH Cái Lò Nướng</em></p>
+                <p><em>2A Ba Gia, Phường 7, quận Tân Bình, Thành phố Hồ Chí Minh</em></p>
+                <p><em>Số điện thoại: 028.8888.3388</em></p>
+                <p><em>Email: contact@cailonuong.com</em></p>
+                <p><em>Giấy chứng nhận đăng ký kinh doanh: 0315630862</em></p>
+                <p><em>Mã số doanh nghiệp: 0315630862. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu
+                        tư</em></p>
+                <p><em>Thành phố Hồ Chí Minh cấp lần đầu ngày 16/04/2019.</em></p>
+            </div>
+            <hr>
+            <div class="footer-bot">
+                <p>© 2023 Cái Lò Nướng.</p>
+                <p>Chính sách giao hàng | Chính sách trả hàng - hoàn tiền | Phương thức thanh toán | Điều khoản & điều
+                    kiện thanh toán | Bảo vệ thông tin cá nhân người tiêu dùng | Thông tin liên hệ</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <!-- Bảng đăng nhập -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLogin()">&times;</span>
+                <h2>Đăng Nhập</h2>
+                <form action="post">
+                    <label for="username">Tên đăng nhập:</label>
+                    <br>
+                    <input type="text" id="username" name="username">
+                    <br>
+                    <label for="password">Mật khẩu:</label>
+                    <br>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <a href="#"><label for="forget">Quên mật khẩu?</label></a>
+                    <br>
+                    <input type="submit" value="Đăng nhập">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="register">
+        <!-- Bảng đăng ký -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeRegister()">&times;</span>
+                <h2>Đăng Ký</h2>
+                <form action="post">
+                    <label for="regUsername">Tên đăng nhập:</label>
+                    <br>
+                    <input type="text" id="regUsername" name="regUsername">
+                    <br>
+                    <label for="regPassword">Mật khẩu:</label>
+                    <br>
+                    <input type="password" id="regPassword" name="regPassword">
+                    <br>
+                    <label for="confirmPassword">Nhập lại mật khẩu:</label>
+                    <br>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <br>
+                    <input type="submit" value="Đăng ký">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../asm/js/test.js"></script>
+</body>
+
+</html>

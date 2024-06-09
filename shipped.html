@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách giao hàng</title>
+    <link rel="stylesheet" href="../asm/css/shippedCss.css">
+    <script src="../asm/js/test.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header_caiLoNuong">
+            <div class="logo">
+                <a href="#"><img src="https://cailonuong.com/wp-content/uploads/2024/04/logo.png#30392" alt="Logo"></a>
+            </div>
+            <div>
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">TRANG CHỦ</a> | </li>
+                    <li class="dropdown">MENU BÁNH |
+                        <ul class="dropdown-content">
+                            <li><a href="#">Sweet Box</a></li>
+                            <li><a href="#">Bánh Mousse</a></li>
+                            <li><a href="#">Bánh Entremet</a></li>
+                            <li><a href="#">Bánh Kem Bắp</a></li>
+                            <li><a href="#">Bánh Flan Gato</a></li>
+                            <li><a href="#">Combo Bánh Nướng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shipped.html">GIAO HÀNG</a> | </li>
+                    <li><a href="contact.html">LIÊN HỆ</a> | </li>
+                    <li><a href="#" onclick="showLogin()">ĐĂNG NHẬP</a> | </li>
+                    <li><a href="#" onclick="showRegister()">ĐĂNG KÝ</a> | </li>
+                    <li>GIỎ HÀNG </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="center_caiLoNuong">
+            <p>Chính sách giao hàng của Cái Lò Nướng được cập nhật ngày <strong>1/12/2020</strong></p>
+            <p>Chúng tôi xây dựng đội ngũ giao hàng riêng để đảm bảo cho khách hàng trải nghiệm mua hàng tốt nhất. Hiện nay, chúng tôi giao hàng đến các quận, huyện tại khu vực Thành Phố Hồ Chí Minh các ngày trong tuần.</p>
+            <p>Khách hàng có thể biết phí giao hàng khi nhập địa chỉ nhận hàng tại form đặt hàng. Để được giải đáp thêm về phí giao hàng, khu vực giao hàng khách hàng liên hệ Hotline 028.8888.3388 để được hỗ trợ.</p>
+            <p>Dựa vào thông tin đặt hàng, chúng tôi sẽ cố gắng giao hàng đến địa chỉ nhận hàng chênh lệch tối đa 30 phút (hoặc có thể sớm hơn tùy tuyến đường và điều kiện giao thông, điều kiện thời tiết lúc giao hàng). Trong mọi trường hợp, nhân viên giao hàng sẽ liên hệ với khách hàng để xác nhận trước khi giao hàng.</p>
+            <p>Khi nhận bánh, Khách hàng kiểm tra bánh đã đúng theo yêu cầu, phụ kiện kèm theo để chung tối xử lý sự cố (nếu có) một cách nhanh nhất. Trường hợp sự cố phát hiện sau khi nhân viên giao hàng đã rời đi, chúng tôi sẽ hỗ trợ một số trường hợp nhất định. Tuy nhiên thời gian hỗ trợ có thể sẽ mất thêm thời gian. Mong khách hàng thông cảm.</p>
+            <p>Quý khách hàng xem thêm Chính sách trả tiền - hoàn tiền tại đây <a style="color: #BF8F45;" href="https://cailonuong.com/chinh-sach-tra-hang-hoan-tien/">https://cailonuong.com/chinh-sach-tra-hang-hoan-tien/</a></p>
+        </div>
+
+        <div class="footer_caiLoNuong">
+            <div class="footer-top">
+                <p><em>Công ty TNHH Cái Lò Nướng</em></p>
+                <p><em>2A Ba Gia, Phường 7, quận Tân Bình, Thành phố Hồ Chí Minh</em></p>
+                <p><em>Số điện thoại: 028.8888.3388</em></p>
+                <p><em>Email: contact@cailonuong.com</em></p>
+                <p><em>Giấy chứng nhận dăng ký kinh doanh: 0315630862</em></p>
+                <p><em>Mã số doanh nghiệp: 0315630862. Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư</em></p>
+                <p><em>Thành phố Hồ Chí Minh cấp lần đầu ngày 16/04/2019.</em></p>
+            </div>
+            <hr>
+            <div class="footer-bot">
+                <p>© 2023 Cái Lò Nướng.</p>
+                <p>Chính sách giao hàng | Chính sách trả hàng - hoàn tiền | Phương thức thanh toán | Điều khoản & điều kiện thanh toán | Bảo vệ thông tin cá nhân người tiêu dùng | Thông tin liên hệ</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="login">
+        <!-- Bảng đăng nhập -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLogin()">&times;</span>
+                <h2>Đăng Nhập</h2>
+                <form action="post">
+                    <label for="username">Tên đăng nhập:</label>
+                    <br>
+                    <input type="text" id="username" name="username">
+                    <br>
+                    <label for="password">Mật khẩu:</label>
+                    <br>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <a href="#"><label for="forget">Quên mật khẩu?</label></a>
+                    <br>
+                    <input type="submit" value="Đăng nhập">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="register">
+        <!-- Bảng đăng ký -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeRegister()">&times;</span>
+                <h2>Đăng Ký</h2>
+                <form action="post">
+                    <label for="regUsername">Tên đăng nhập:</label>
+                    <br>
+                    <input type="text" id="regUsername" name="regUsername">
+                    <br>
+                    <label for="regPassword">Mật khẩu:</label>
+                    <br>
+                    <input type="password" id="regPassword" name="regPassword">
+                    <br>
+                    <label for="confirmPassword">Nhập lại mật khẩu:</label>
+                    <br>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <br>
+                    <input type="submit" value="Đăng ký">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.header_caiLoNuong {
+    letter-spacing: 1px;
+    width: auto;
+    height: 90px;
+    background-color: #44612D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align items center vertically */
+    justify-content: center; /* Center horizontally */
+    color: #B6BDC4;
+    font-weight: bold;
+}
+.horizontal-menu a:hover{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+}
+.horizontal-menu a{
+    color: #B6BDC4;
+}
+.horizontal-menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.logo img {
+    margin-right: 35px;
+    max-width: 90px;
+    height: auto;
+}
+
+.horizontal-menu li:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+}
+
+
+/* Dropdown menu */
+.dropdown {
+    margin-right: 30px; /* Increase the margin to space out the dropdown menu */
+}
+.dropdown-content {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center properly */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #44612D;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* center */
+.center_caiLoNuong {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.center_caiLoNuong h2 {
+    font-size: 35px;
+    margin-left: 250px;
+    text-align: left;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Đặt phần nội dung chính để nó có thể giãn ra nếu cần */
+.center_caiLoNuong {
+    width: 80%;
+    color: #626262;
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+    text-align: left; /* Giữ canh trái của chữ */
+    flex-grow: 1; /* Để phần này giãn ra chiếm khoảng trống */
+}
+
+/* Chỉnh các đoạn văn bản và liên kết bên trong phần nội dung chính */
+.center p {
+    text-align: left; /* Canh trái cho các đoạn văn bản bên trong phần center */
+}
+.center p a {
+    text-decoration: none; /* Loại bỏ gạch dưới của liên kết */
+    color: #BF8F45;
+}
+
+
+
+/* Các kiểu khác */
+.horizontal-menu a {
+    text-decoration: none;
+    color: #B6BDC4;
+}
+.horizontal-menu {
+    list-style-type: none; /* Loại bỏ dấu chấm ở đầu mỗi mục */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định của thẻ ul */
+    margin: 0; /* Loại bỏ khoảng cách margin mặc định của thẻ ul */
+    display: flex; /* Sử dụng flexbox để các mục nằm ngang */
+    color: #B6BDC4;
+    font-weight: bold;
+}
+
+.horizontal-menu li {
+    margin-right: 20px; /* Khoảng cách giữa các mục, bạn có thể chỉnh sửa giá trị này */
+}
+.logo img {
+    margin-right: 35px;
+    max-width: 90px; /* Đặt kích thước tối đa cho logo */
+    height: auto; /* Đảm bảo tỉ lệ ảnh không bị thay đổi */
+}
+
+.horizontal-menu li:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+}
+
+
+/* Đặt footer ở cuối trang */
+/* footer */
+.footer_caiLoNuong {
+    color: #fefefe;
+    width: 100%;
+    background-color: #152331;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Đặt footer ở vị trí cố định */
+    bottom: 0; /* Đặt footer ở dưới cùng của trang */
+}
+
+
+.footer-top {
+    padding: 10px;
+}
+
+.footer-bot {
+    padding: 10px;
+}
+/* footer */
+
+
+
+/* CSS cho modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #44612D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color: #365a24;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* CSS cho modal */
